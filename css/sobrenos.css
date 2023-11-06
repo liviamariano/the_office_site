@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+#menu{
+    background-color: #a1cee0;
+}
+
+img{
+    height: 500px;
+    margin-right: -85px;
+}
+
+h1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
