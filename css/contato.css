@@ -1,3 +1,27 @@
 #menu{
-    background-color: #a1cee0;
+    background-color: #283034;
+  
 }
+
+#links{
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+img{
+    height: 500px;
+    margin-left: 55px;
+}
+
+form {
+width: 1000px;
+justify-content: center;
+
+}
+

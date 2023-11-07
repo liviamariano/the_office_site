@@ -16,18 +16,18 @@
 
 <nav id="menu" class="navbar navbar-expand-lg body-tertiary mb-4">
         <div class="container">
-            <a href="#" class="navbar-brand">Dander Mufflin</a>
+            <a href="#" class="navbar-brand" id="links">Dander Mufflin</a>
 
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-b mb-lg-0">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link" id="links">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="sobrenos.html" class="nav-link">Sobre nós</a>
+                        <a href="sobrenos.html" class="nav-link" id="links">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contato.php" class="nav-link active">Contato</a>
+                        <a href="contato.php" class="nav-link active" id="links">Contato</a>
                     </li>
                 </ul>
     </nav>
@@ -35,6 +35,7 @@
 
 
     <div class="container">
+     
         <div class="row justify-content-center">
             <div class="col3">
                 <form action="" method="post">
@@ -50,10 +51,12 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary">Enviar</button>
+                     
                     </fieldset>
                 </form>
             </div>
         </div>
+        <img src="imagens/pam.jpg" alt="">
     </div>
 
     <footer class="py-3 my-4">
@@ -68,6 +71,28 @@
                 <a href="contato.html" class="nav-link px-2 text-muted">Contato</a>
             </li>
         </ul>
+
+
+        <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $mensagem = $_POST["mensagem"];
+
+    // Aqui você pode adicionar o código para salvar os dados em um banco de dados ou realizar outras ações desejadas, como enviar um e-mail.
+    // Por exemplo, você pode usar a função mail() do PHP para enviar o e-mail.
+
+    // Exemplo de envio de e-mail
+    $destinatario = "seu_email@example.com";
+    $assunto = "Nova mensagem do formulário de contato";
+    $mensagem_email = "E-mail: $email\n\nMensagem:\n$mensagem";
+    
+    mail($destinatario, $assunto, $mensagem_email);
+
+    // Redirecionar para uma página de confirmação ou exibir uma mensagem de sucesso.
+    header("Location: confirmacao.html");
+}
+?>
+
 
         <p class="text-center text muted">&copy:2023 TheOffice</p>
     </footer>
