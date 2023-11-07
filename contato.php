@@ -8,19 +8,15 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/contato.css">
 </head>
 
 <body>
-    <!-- div>div.col*2 
-    <div>
-    <div class="col"></div>
-    <div class="col"></div>
-   </div
-   >-->
+    
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4 bg-light">
+<nav id="menu" class="navbar navbar-expand-lg body-tertiary mb-4">
         <div class="container">
-            <a href="#" class="navbar-brand">Ophelia</a>
+            <a href="#" class="navbar-brand">Dander Mufflin</a>
 
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-b mb-lg-0">
